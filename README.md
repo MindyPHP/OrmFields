@@ -1,7 +1,7 @@
 # Orm Fields Component
 
 [![Build Status](https://travis-ci.org/MindyPHP/OrmFields.svg?branch=master)](https://travis-ci.org/MindyPHP/OrmFields)
-[![Coverage Status](https://img.shields.io/coveralls/MindyPHP/OrmFields.svg)](https://coveralls.io/r/MindyPHP/OrmFields)
+[![codecov](https://codecov.io/gh/MindyPHP/OrmFields/branch/master/graph/badge.svg)](https://codecov.io/gh/MindyPHP/OrmFields)
 [![Latest Stable Version](https://poser.pugx.org/mindy/orm-fields/v/stable.svg)](https://packagist.org/packages/mindy/orm-fields)
 [![Total Downloads](https://poser.pugx.org/mindy/orm-fields/downloads.svg)](https://packagist.org/packages/mindy/orm-fields)
 
