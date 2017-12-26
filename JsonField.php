@@ -1,11 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 /*
- * (c) Studio107 <mail@studio107.ru> http://studio107.ru
- * For the full copyright and license information, please view
- * the LICENSE file that was distributed with this source code.
+ * Studio 107 (c) 2017 Maxim Falaleev
  *
- * Author: Maxim Falaleev <max@studio107.ru>
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
 
 namespace Mindy\Orm\Fields;
@@ -34,8 +35,8 @@ class JsonField extends TextField
             new Assert\Callback(function ($value, ExecutionContextInterface $context, $payload) {
                 if (
                     is_object($value) &&
-                    method_exists($value, 'toJson') === false &&
-                    method_exists($value, 'toArray') === false
+                    false === method_exists($value, 'toJson') &&
+                    false === method_exists($value, 'toArray')
                 ) {
                     $context->addViolation('Not json serialize object: %type%', ['%type%' => gettype($value)]);
                 }
